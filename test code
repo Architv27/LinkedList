@@ -1,0 +1,200 @@
+int main()
+{
+	//Let us use the same seed in order to generate the same random numbers on all the lab computers
+	//that use the same version of MSVC++. This way the output of this program on any of the lab
+	//computers will be identical to the output provided below so long as your implementations are
+	//correct.
+	unsigned int seed = 5;
+	srand(seed);
+	const int SIZE = 20;
+
+	//Declare a linkedlist container to store pointers to Shape objects
+	LinkedList LL;
+
+	//Print the number of objects at the beginning
+	cout << "At the beginning there are " << Shape::getCount() << " objects constructed." << endl;
+	cout << "And there are " << LL.getSize() << " elements in the linkedlist container." << endl << endl;
+	
+	///////////////////////////////////// TASK 1 ///////////////////////////////////////////////////////
+	//Insert SIZE random objects into the container using head_insert member function
+	cout << endl << "Inserting " << SIZE << " objects with insert_increasing member function" << endl;
+	cout << "*********************" << endl;
+	for (int i = 0; i < SIZE; i++)
+	{
+		ShapePtr p = getRandomShape();
+		cout << "Inserting " << endl << *p << endl;
+		LL.insert_increasing(p);
+	}
+	//Print the number of objects constructed so far and the number of elements of the forward list
+	cout << endl << "Now there are " << Shape::getCount() << " objects constructed." << endl;
+	cout << "And there are " << LL.getSize() << " elements in the linkedlist container." << endl << endl;
+
+	//Print the elements of the container
+	cout << "The elements of the linkedlist container are" << endl;
+	cout << LL << endl;
+
+	//Now delete all the elements of the forward_list and also clear the forward list
+	cout << endl << "Emptying the linkedlist container." << endl;
+	LL.~LinkedList();
+	
+	//Print the number of objects we still have in our application and the number of elements in the container
+	cout << "Now there are " << Shape::getCount() << " objects constructed." << endl;
+	cout << "And there are " << LL.getSize() << " elements in the linkedlist container." << endl << endl;
+	
+	///////////////////////////////////// TASK 2 ///////////////////////////////////////////////////////
+	//Insert SIZE random objects into the container using insert_grouped function
+	cout << "Inserting " << SIZE << " objects with insert_grouped function" << endl;
+	cout << "*****************" << endl;
+	for (int i = 0; i < SIZE; i++)
+	{
+		ShapePtr p = getRandomShape();
+		cout << "Inserting " << endl << *p << endl;
+		LL.insert_grouped(p);
+	}
+
+	//Print the number of objects constructed so far and the number of elements of the forward list
+	cout << endl << "Now there are " << Shape::getCount() << " objects constructed." << endl;
+	cout << "And there are " << LL.getSize() << " elements in the linkedlist container." << endl << endl;
+
+	//Print the elements of the container
+	cout << "The elements of the linkedlist container are" << endl;
+	cout << LL << endl;
+
+	//Now delete all the elements of the forward_list also clear the forward list
+	cout << endl << "Emptying the linkedlist container." << endl;
+	LL.~LinkedList();
+	
+	//Print the number of objects we still have in our application and the number of elements in the container
+	cout << "Now there are " << Shape::getCount() << " objects constructed." << endl;
+	cout << "And there are " << LL.getSize() << " elements in the linkedlist container." << endl << endl;
+	
+	///////////////////////////////////// TASK 3 ///////////////////////////////////////////////////////
+	//Insert SIZE random objects into the container using insert_grouped_sorted function
+	cout << "Inserting " << SIZE << " objects with insert_grouped_increasing function" << endl;
+	cout << "********************" << endl;
+	for (int i = 0; i < SIZE; i++)
+	{
+		ShapePtr p = getRandomShape();
+		cout << "Inserting " << endl << *p << endl;
+		LL.insert_grouped_increasing(p);
+	}
+
+	//Print the number of objects constructed so far and the number of elements of the forward list
+	cout << endl << "Now there are " << Shape::getCount() << " objects constructed." << endl;
+	cout << "And there are " << LL.getSize() << " elements in the linkedlist container." << endl << endl;
+
+	//Print the elements of the container
+	cout << "The elements of the linkedlist container are" << endl;
+	cout << LL << endl;
+
+	//Now delete all the elements of the forward_list also clear the forward list
+	cout << endl << "Emptying the linkedlist container." << endl;
+	LL.~LinkedList();
+	
+	//Print the number of objects we still have in our application and the number of elements in the container
+	cout << "Now there are " << Shape::getCount() << " objects constructed." << endl;
+	cout << "And there are " << LL.getSize() << " elements in the linkedlist container." << endl << endl;
+
+	system("Pause");
+	return 0;
+}
+int main()
+{
+	//Let us use the same seed in order to generate the same random numbers on all the lab computers
+	//that use the same version of MSVC++. This way the output of this program on any of the lab
+	//computers will be identical to the output provided below so long as your implementations are
+	//correct.
+	unsigned int seed = 5;
+	srand(seed);
+	const int SIZE = 20;
+
+	//Declare a linkedlist container to store pointers to Shape objects
+	LinkedList LL;
+
+	//Print the number of objects at the beginning
+	cout << "At the beginning there are " << Shape::getCount() << " objects constructed." << endl;
+	cout << "And there are " << LL.getSize() << " elements in the linkedlist container." << endl << endl;
+	
+	///////////////////////////////////// TASK 1 ///////////////////////////////////////////////////////
+	//Insert SIZE random objects into the container using head_insert member function
+	cout << endl << "Inserting " << SIZE << " objects with insert_increasing member function" << endl;
+	cout << "*********************" << endl;
+	for (int i = 0; i < SIZE; i++)
+	{
+		ShapePtr p = getRandomShape();
+		cout << "Inserting " << endl << *p << endl;
+		LL.insert_increasing(p);
+	}
+	//Print the number of objects constructed so far and the number of elements of the forward list
+	cout << endl << "Now there are " << Shape::getCount() << " objects constructed." << endl;
+	cout << "And there are " << LL.getSize() << " elements in the linkedlist container." << endl << endl;
+
+	//Print the elements of the container
+	cout << "The elements of the linkedlist container are" << endl;
+	cout << LL << endl;
+
+	//Now delete all the elements of the forward_list and also clear the forward list
+	cout << endl << "Emptying the linkedlist container." << endl;
+	LL.~LinkedList();
+	
+	//Print the number of objects we still have in our application and the number of elements in the container
+	cout << "Now there are " << Shape::getCount() << " objects constructed." << endl;
+	cout << "And there are " << LL.getSize() << " elements in the linkedlist container." << endl << endl;
+	
+	///////////////////////////////////// TASK 2 ///////////////////////////////////////////////////////
+	//Insert SIZE random objects into the container using insert_grouped function
+	cout << "Inserting " << SIZE << " objects with insert_grouped function" << endl;
+	cout << "*****************" << endl;
+	for (int i = 0; i < SIZE; i++)
+	{
+		ShapePtr p = getRandomShape();
+		cout << "Inserting " << endl << *p << endl;
+		LL.insert_grouped(p);
+	}
+
+	//Print the number of objects constructed so far and the number of elements of the forward list
+	cout << endl << "Now there are " << Shape::getCount() << " objects constructed." << endl;
+	cout << "And there are " << LL.getSize() << " elements in the linkedlist container." << endl << endl;
+
+	//Print the elements of the container
+	cout << "The elements of the linkedlist container are" << endl;
+	cout << LL << endl;
+
+	//Now delete all the elements of the forward_list also clear the forward list
+	cout << endl << "Emptying the linkedlist container." << endl;
+	LL.~LinkedList();
+	
+	//Print the number of objects we still have in our application and the number of elements in the container
+	cout << "Now there are " << Shape::getCount() << " objects constructed." << endl;
+	cout << "And there are " << LL.getSize() << " elements in the linkedlist container." << endl << endl;
+	
+	///////////////////////////////////// TASK 3 ///////////////////////////////////////////////////////
+	//Insert SIZE random objects into the container using insert_grouped_sorted function
+	cout << "Inserting " << SIZE << " objects with insert_grouped_increasing function" << endl;
+	cout << "********************" << endl;
+	for (int i = 0; i < SIZE; i++)
+	{
+		ShapePtr p = getRandomShape();
+		cout << "Inserting " << endl << *p << endl;
+		LL.insert_grouped_increasing(p);
+	}
+
+	//Print the number of objects constructed so far and the number of elements of the forward list
+	cout << endl << "Now there are " << Shape::getCount() << " objects constructed." << endl;
+	cout << "And there are " << LL.getSize() << " elements in the linkedlist container." << endl << endl;
+
+	//Print the elements of the container
+	cout << "The elements of the linkedlist container are" << endl;
+	cout << LL << endl;
+
+	//Now delete all the elements of the forward_list also clear the forward list
+	cout << endl << "Emptying the linkedlist container." << endl;
+	LL.~LinkedList();
+	
+	//Print the number of objects we still have in our application and the number of elements in the container
+	cout << "Now there are " << Shape::getCount() << " objects constructed." << endl;
+	cout << "And there are " << LL.getSize() << " elements in the linkedlist container." << endl << endl;
+
+	system("Pause");
+	return 0;
+}
